@@ -1,0 +1,96 @@
+<h1>Photo Management Apllication using AngularJS and NodeJs.</h1>
+
+<h2>Features</h2>
+<ul>
+  <li>Built into SAP framework.</li>
+  <li>Uploads images via nodeJS server.</li>
+  <li>Shows list of uploaded pictures.</li>
+</ul>
+
+<h2>File Stucture</h2>
+<pre>
+/
+  /api
+    /node_modules
+    nangular.js
+    run.bat * Execute script that starts the nangular node
+  /data *Photos are uploaded here by a unique name
+  /media
+    /css
+    bootstrap.css
+    nangular.css
+    /js
+    angular-min.js
+    angular-animate.js
+    angular-file-upload.js
+    FileAPI.flash.swf
+    FileApi.min.js
+    ui-bootstrap-tpls-0.12.0.min.js
+    upload.js
+  /pages
+    /directives
+      photothumb.html
+    about.html
+    error.html
+    myPhotos.html
+    upload.html
+index.html
+nangular.js
+readme.txt
+upload.html
+</pre>
+
+<h2>Instructions</h2>
+<ul>
+  <li>Place the folder nangular into your localhost server.</li>
+  <li>Under the api folder execute the run.bat file to start the node server at port 1337.</li>
+  <li>Run the application from your localhost</li>
+</ul>
+
+
+
+<h2>API calls</h2>
+<p> The Node API can be called using the following routes</p>
+<table class="table table-bordered">
+<tr>
+	<th>Route</th>
+	<th>Attributes</th>
+	<th>Function</th>
+</tr>
+<tr>
+	<td>photos/list</td>
+	<td></td>
+	<td>Lists all the photos from the data folder</td>
+</tr>
+<tr>
+	<td>photos/upload</td>
+	<td>Multipart Form Data</td>
+	<td>Uploads the image into the /data folder</td>
+</tr>
+<tr>
+	<td>photos/list/:id/details</td>
+	<td>ID: The name of the image</td>
+	<td>Returns an array containing the dimensions of the image</td>
+</tr>
+</table>
+
+<h2>Dependencies</h2>
+<ul>
+  <li>AngularJS and NgRoute.</li>
+  <li>NodeJS.</li>
+  <li>Angular-File-Upload</li>
+  <li>angular-ui/bootstrap</li> 
+  <li>localhost Server</li>
+</ul>
+
+<h2>Node Modules</h2>
+<ul>
+  <li>express</li>
+  <li>fs</li>
+  <li>image-size</li>
+  <li>multer</li>
+</ul>
+ 
+<h2>About</h2>
+<p>Developed by George Papanikolaou</p>
+<p><a href="http://www.skoumas.com/labs">www.skoumas.com</a></p>

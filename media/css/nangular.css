@@ -1,0 +1,30 @@
+ .thumb
+{
+	border:1px solid #ddd;
+	border-bottom:4px solid #ddd;
+	padding:10px;
+	margin:10px;
+	width:180px;
+	display: inline-block;
+	float:left;
+	cursor: pointer;
+	
+}
+
+.thumb:hover
+{
+	background-color: #ddd;
+}
+
+.image
+{
+	width:100%;
+	height:auto;
+}
+ 
+.imagecont
+{
+	overflow: hidden;
+	height:100px;
+}
+ 

@@ -1,0 +1,17 @@
+<div class="container-fluid" ng-controller="myPhotos">
+  <div class="col-md-10">
+    <div>
+      <div ng-repeat="photo in photos" photothumb ng-click="getPhoto(photo.filename)">
+
+      </div>
+      <div ng-hide="photos" >No photos yet</div>
+    </div>
+  </div>
+
+  <div class="col-md-2">
+  
+    <h5>File Details:</h5>Width: {{photoDetails.width}}<br>
+    Height: {{photoDetails.height}}
+  
+</div>
+</div>
